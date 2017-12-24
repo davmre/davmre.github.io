@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="David Moore">
+
+    <title>Dave Moore</title>
+
+
+<!-- Google analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18799056-1']);
+  _gaq.push(['_setDomainName', 'cs.berkeley.edu']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron-narrow.css" rel="stylesheet">
+
+    <!-- code to show/hide abstract and bibtex blocks -->
+    <script type="text/javascript">
+      function showDiv(parentNode, classname) {
+      moreBlock = parentNode.getElementsByClassName(classname)[0];
+
+      if (moreBlock.style.display == 'none' || moreBlock.style.display == '') {
+      moreBlock.style.display = 'block';
+      }
+      else {
+      moreBlock.style.display = 'none';
+      }
+      }
+
+    </script>
+
+    <style>
+      .abstract {
+      display: none;
+      margin-left: 20px;
+      }
+      .bib {
+      display: none;
+      margin-left: 20px;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="#research">Research</a></li>
+          <li><a href="#software">Software</a></li>
+          <li><a href="#teaching">Teaching</a></li>
+          <li><a href="#personal">Personal</a></li>
+          <li><a href="http://davmre.github.io">Blog</a></li>
+          <li><a href="cv.pdf">CV</a></li>
+        </ul>
+        <div class="text-muted"><h3>Dave Moore</h3></div>
+      </div>
+
+      <div class="row content">
+	<div class="col-lg-8">
+	  <p>I'm a PhD student in computer science, advised by <a href="http://www.eecs.berkeley.edu/~russell/">Stuart Russell</a>.</p>
+
+	  <p>My primary current project is the application of Bayesian inference to nuclear test monitoring: given seismic waveforms from a global network of stations, we want to infer seismic events that plausibly explain the observed signals. Portions of this work have been funded by the <a href="http://www.ctbto.org">CTBTO</a> and <a href="http://www.dtra.mil/">DTRA</a>.</p>
+
+	  <p>I am also interested more generally in statistical machine learning, especially in <a href="http://probabilistic-programming.org/wiki/Home">probabilistic programming</a>, i.e., how to specify and automatically perform inference in complex probability models, and also in nonparametric Bayesian statistics, in particular <a href="http://www.gaussianprocess.org/">Gaussian processes</a>. I'm hopeful that these interests can advance the <a href="http://en.wikipedia.org/wiki/Strong_AI">Project of AI</a>.</p>
+
+	  <p>Before coming to Berkeley, I was an undergrad at Williams College, where I majored in CS and math and wrote a senior thesis with <a href="http://cs.williams.edu/~andrea">Andrea Danyluk</a>. </p>
+
+	</div>
+	<div class="col-lg-4">
+	  <p><img src="dmoore.jpg"></p>
+
+	  <p><b>Email:</b> <a href="mailto:dmoore@cs.berkeley.edu">dmoore@cs.berkeley.edu</a><br>
+	    <b>Office:</b> Sutardja Dai Hall, 7th floor, desk 108.<br>
+	    <b>Calendar:</b> <a href="https://www.google.com/calendar/embed?src=davmre@gmail.com">here</a>.
+	    
+
+	</div>
+	<b>Dec 2016:</b> my <a href="papers/dmoore_thesis.pdf">thesis</a> on signal-based Bayesian monitoring of seismic events is now available! This spring I'll continue at Berkeley as a postdoc following up on this work and hopefully starting some new projects.
+      </div>
+      <hr>
+      <div class="row content">
+	<a name="research"><h3>Research</h3></a>
+	  <!-- template for new papers:
+	  <li>
+	    <b>Title</b>
+	    <br />
+	    Authors
+	    <br />
+	    <i>Science</i>, New York, NY, January 2100.
+	    <br />
+	    <a href="papers/">[paper]</a>&nbsp;&nbsp;
+	    <a href="papers/">[poster]</a>&nbsp;&nbsp;
+	    <a href="#" onclick="showDiv(this.parentNode, 'abstract');return false;">[abstract]</a>&nbsp;&nbsp;
+	    <a href="#" onclick="showDiv(this.parentNode, 'bib');return false;">[bib]</a><br>
+	    <div class="abstract" >
+	      <p>
+	      </p>
+	    </div>
+	    <div class="bib" >
+	      <code>
+		<pre>
+@article{,
+title     = {},
+author    = {},
+journal = {},
+year      = {},
+month     = {},
+address   = {},
+}</pre>
+	      </code>
+	    </div><br />
+	  </li>
+	  -->
+
+	<h4>Selective Conferences</h4>
+	<ul>
+	  <li>
+	    <b>Signal-based Bayesian Seismic Monitoring</b>
+	    <br />
+	    David A. Moore and Stuart J. Russell
+	    <br />
+	    <i>Artificial Intelligence and Statistics (AISTATS)</i>, Fort Lauderdale, FL, April 2017.  
+	    <br />
+	    <a href="https://arxiv.org/abs/1703.00561">[arXiv]</a>&nbsp;&nbsp;
+	    <a href="papers/dmoore_thesis.pdf">[thesis]</a>&nbsp;&nbsp;
+	    <a href="#" onclick="showDiv(this.parentNode, 'abstract');return false;">[abstract]</a>&nbsp;&nbsp;
+	    <a href="#" onclick="showDiv(this.parentNode, 'bib');return false;">[bib]</a><br>
+	    <div class="abstract" >
+	      <p>
+
+Detecting weak seismic events from noisy sensors is a difficult perceptual task. We formulate this task as Bayesian inference and propose a generative model of seismic events and signals across a network of spatially distributed stations. Our system, SIGVISA, is the first to directly model seismic waveforms, allowing it to incorporate a rich representation of the physics underlying the signal generation process. We use Gaussian processes over wavelet parameters to predict detailed waveform fluctuations based on historical events, while degrading smoothly to simple parametric envelopes in regions with no historical seismicity. Evaluating on data from the western US, we recover three times as many events as previous work, and reduce mean location errors by a factor of four while greatly increasing sensitivity to low-magnitude events.
+	      </p>
+	    </div>
+	    <div class="bib" >
+	      <code>
+		<pre>
+@article{moore2017signal,
+title     = {Signal-based Bayesian Seismic Monitoring},
+author    = {David A. Moore and Stuart J. Russell},
+journal = {Artificial Intelligence and Statistics (AISTATS)},
+year      = {2017},
+month     = {April},
+address   = {Fort Lauderdale, FL},
+}</pre>
+	      </code>
+	    </div><br />
+	  </li>
+	  <li>
+	    <b>Gaussian Process Random Fields</b>
+	    <br />
+	    David A. Moore and Stuart J. Russell
+	    <br />
+	    <i>Neural Information Processing Systems (NIPS)</i>, Montreal, December 2015.
+	    <br />
+	    <a href="papers/gprf.pdf">[paper]</a>&nbsp;&nbsp;
+	    <a href="papers/gprf_supplemental.pdf">[supplemental material]</a>&nbsp;&nbsp;
+	    <a href="https://github.com/davmre/gprf/">[code]</a>&nbsp;&nbsp;
+	    <a href="#" onclick="showDiv(this.parentNode, 'abstract');return false;">[abstract]</a>&nbsp;&nbsp;
+	    <a href="#" onclick="showDiv(this.parentNode, 'bib');return false;">[bib]</a><br>
+	    <div class="abstract" >
+	      <p>
+Gaussian processes have been successful in both supervised and unsupervised machine learning tasks, but their computational complexity has constrained practical applications. We introduce a new approximation for large-scale Gaussian processes, the Gaussian Process Random Field (GPRF), in which local GPs are coupled via  pairwise potentials. The GPRF likelihood is a simple, tractable, and parallelizeable approximation to the full GP marginal likelihood, enabling latent variable modeling and hyperparameter selection on large datasets. We demonstrate its effectiveness on synthetic spatial data as well as a real-world application to seismic event location.
+	      </p>
+	    </div>
+	    <div class="bib" >
+	      <code>
+		<pre>
+@article{moore2015gprf,
+title = {Gaussian Process Random Fields},
+author = {David A. Moore and Stuart J. Russell},
+journal = {Advances in Neural Information Processing Systems (NIPS)},
+month = {December},
+year = {2015},
+address   = {Montreal},
+}</pre>
+	      </code>
+	    </div><br />
+	  </li>
+
+	  <li>
+	    <b>Fast Gaussian Process Posteriors with Product Trees</b>
+	    <br />
+	    David A. Moore and Stuart J. Russell
+	    <br />
+	    <i>Uncertainty in AI (UAI)</i>, Quebec City, July 2014.
+	    <br />
+	    <a href="papers/product_tree_uai14.pdf">[paper]</a>&nbsp;&nbsp;
+	    <a href="papers/treegp.tgz">[code]</a>&nbsp;&nbsp;
+	    <a href="#" onclick="showDiv(this.parentNode, 'bib');return false;">[bib]</a><br>
+	    <div class="bib" ><code><pre>
+@article{moore2014uai,
+title = {Fast Gaussian Process Posteriors with Product Trees},
+author = {David A. Moore and Stuart J. Russell},
+journal = {Proceedings of Uncertainty in AI (UAI)},
+month = {July},
+year = {2014},
+address   = {Quebec City},
+}</pre></code></div><br />
+	  </li>
+
+
+	</ul>
+	<h4>Workshops and other lightly-refereed venues</h4>
+	<ul>
+
+	  <li>
+	    <b>Parallel Chromatic MCMC with Spatial Partitioning</b>
+	    <br />
+	    Jun Song and David A. Moore
+	    <br />
+	    <i>AAAI Workshop on Distributed Machine Learning</i>, San Francisco, February 2017.
+	    <br />
+	    <a href="https://arxiv.org/abs/1612.00595">[arXiv]</a>&nbsp;&nbsp;
+	    <a href="#" onclick="showDiv(this.parentNode, 'abstract');return false;">[abstract]</a>&nbsp;&nbsp;
+	    <a href="#" onclick="showDiv(this.parentNode, 'bib');return false;">[bib]</a><br>
+	    <div class="abstract" >
+	      <p>
+We introduce a novel approach for parallelizing MCMC inference in models with spatially determined conditional independence relationships, for which existing techniques exploiting graphical model structure are not applicable. Our approach is motivated by a model of seismic events and signals, where events detected in distant regions are approximately independent given those in intermediate regions. We perform parallel inference by coloring a factor graph defined over regions of latent space, rather than individual model variables. Evaluating on a model of seismic event detection, we achieve significant speedups over serial MCMC with no degradation in inference quality. 
+	      </p>
+	    </div>
+	    <div class="bib" >
+	      <code>
+		<pre>
+@article{song2017chrom,
+title     = {Parallel Chromatic MCMC with Spatial Partitioning},
+author    = {Jun Song and David A. Moore},
+journal = {AAAI Workshop on Distributed Machine Learning},
+year      = {2017},
+month     = {February},
+address   = {San Francisco},
+}</pre>
+	      </code>
+	    </div><br />
+	  </li>
+
+
+	  <li>
+	    <b>Symmetrized Variational Inference</b>
+	    <br />
+	    David A. Moore
+	    <br />
+	    <i>NIPS Workshop on Advances in Approximate Bayesian Inference</i>, Barcelona, December 2016.
+	    <br />
+	    <a href="papers/symmetrized_vi.pdf">[paper]</a>&nbsp;&nbsp;
+	    <a href="papers/symmetrized_vi_poster.pdf">[poster]</a>&nbsp;&nbsp;
+	    <a href="#" onclick="showDiv(this.parentNode, 'abstract');return false;">[abstract]</a>&nbsp;&nbsp;
+	    <a href="#" onclick="showDiv(this.parentNode, 'bib');return false;">[bib]</a><br>
+	    <div class="abstract" >
+	      <p>
+		We introduce a framework for modeling parameter
+symmetries in variational inference by explicitly mixing a base
+approximating density over a symmetry group. We show that this can be
+done tractably for the case of a Gaussian mixture over the orthogonal
+group under an isotropic variance assumption. Initial results show
+that inference with a symmetrized posterior avoids component collapse
+and leads to improved predictive performance.
+	      </p>
+	    </div>
+	    <div class="bib" >
+	      <code>
+		<pre>
+@article{moore2016symvi,
+title     = {Symmetrized Variational Inference},
+author    = {David A. Moore},
+journal = {NIPS Workshop on Advances in Approximate Bayesian Inference},
+year      = {2016},
+month     = {December},
+address   = {Barcelona},
+}</pre>
+	      </code>
+	    </div><br />
+	  </li>
+
+	  <li>
+	    <b>SIG-VISA: Signal-Based Vertically Integrated Bayesian Monitoring</b>
+	    <br />
+	    David A. Moore, Alex Ning Ding, Kevin Mayeda, Stephen C. Myers, Stuart J. Russell
+	    <br />
+	    <i>American Geophysical Union (AGU) Fall Meeting</i>, San Francisco, CA, December 2013.
+	    <br />
+	    <a href="papers/sigvisa_agu_2013_poster.pdf">[poster]</a>&nbsp;&nbsp;
+	    <a href="#" onclick="showDiv(this.parentNode, 'bib');return false;">[bib]</a><br>
+	    <div class="bib" ><code><pre>
+@misc{moore2013agu,
+title = {SIG-VISA: Signal-Based Vertically Integrated Bayesian Monitoring},
+author = {David A. Moore and Alex Ning Ding and Kevin Mayeda and Stephen C. Myers and Stuart J. Russell},
+howpublished = {American Geophysical Union (AGU) Fall Meeting (poster)},
+month = {December},
+year = {2013},
+address   = {San Francisco, CA},
+}</pre></code></div><br>
+	  </li>
+
+
+	  <li>
+	    <b>Product Trees for Gaussian Process Covariance in Sublinear Time</b>
+	    <br />
+	    David A. Moore and Stuart J. Russell
+	    <br />
+	    <i>UAI Workshop on Models of Spatial, Temporal, and Network Data (UAI-MSTND)</i>, Bellevue, WA, July 2013.
+	    <br />
+	    <a href="papers/prodtree_mstnd_2013.pdf">[paper]</a>&nbsp;&nbsp;
+	    <a href="papers/prodtree_mstnd_2013_slides.pptx">[slides]</a>&nbsp;&nbsp;
+	    <a href="#" onclick="showDiv(this.parentNode, 'abstract');return false;">[abstract]</a>&nbsp;&nbsp;
+	    <a href="#" onclick="showDiv(this.parentNode, 'bib');return false;">[bib]</a><br>
+	    <div class="abstract" >
+	      <p>
+		Gaussian process (GP) regression is a powerful technique for nonparametric regression;
+unfortunately, calculating the predictive variance in a standard GP model requires time O(n^2) in the size of the training set. This is cost prohibitive when GP likelihood calculations must be done in the inner loop of the inference procedure for a larger model (e.g., MCMC). Previous work by Shen et al. (2006) used a k-d tree structure to approximate the predictive mean in certain GP models. We extend this approach to achieve efficient approximation of the predictive covariance using a tree clustering on pairs of training points. We show empirically that this signicantly increases performance at minimal cost in accuracy. Additionally, we apply our method to "primal/dual" models having both parametric and nonparametric components and show that this enables efficient computations even while modeling longer-scale variation.</p>
+	    </div>
+	    <div class="bib" >
+	      <code>
+		<pre>
+@article{moore2013mstnd,
+title     = {Product Trees for Gaussian Process Covariance in Sublinear Time},
+author    = {David A. Moore and Stuart J. Russell},
+journal = {UAI Workshop on Models of Spatial, Temporal, and Network Data (UAI-MSTND)},
+year      = {2013},
+month     = {July},
+address   = {Bellevue, WA},
+}</pre>
+	      </code>
+	    </div><br>
+	  </li>
+
+
+
+
+	  <li>
+	    <b>Progress in Signal-based Bayesian Monitoring</b>
+	    <br />
+	    David Moore, Kevin Mayeda, Stephen Myers, Min Joon Seo, Stuart Russell
+	    <br />
+	    <i>Monitoring Research Review</i>, Albuquerque, NM, September 2012.
+	    <br />
+	    <a href="papers/sigvisa-mrr-12.pdf">[paper]</a>&nbsp;&nbsp;
+	    <a href="papers/sigvisa_mrr_2012_poster.pdf">[poster]</a>&nbsp;&nbsp;
+	    <a href="#" onclick="showDiv(this.parentNode, 'abstract');return false;">[abstract]</a>&nbsp;&nbsp;
+	    <a href="#" onclick="showDiv(this.parentNode, 'bib');return false;">[bib]</a><br>
+
+	    <div class="abstract" >
+	      <p>
+		Localization tools such as the CTBTO's GA (Global Association) system work by analyzing detections of arriving phases; these detections constitute a discretized, thresholded summary of information from the underlying seismic waveforms. By contrast, our SIG-VISA (SIGnal-based Vertically Integrated Seismic Analysis) system operates directly at the level of the raw waveforms or envelopes, applying Bayesian inference to a generative probabilistic model of seismic traces to search for the event bulletin having the highest posterior probability given the observed signals. We exhibit a SIG-VISA prototype demonstrating improved sensitivity and localization performance compared to purely detection-based methods. </p>
+
+	      <p>The SIG-VISA generative envelope model views the observed signal envelope as the composition of a background noise process plus a set of arriving phase envelopes; in its simplest form, each phase envelope consists of a parameterized template perturbed by an autoregressive process. We build station-specific models for the template shape parameters, including amplitude and coda decay rate across multiple frequency bands, as well as the parameters of the noise and signal perturbation processes. We show empirically that our signal-based model leads to increased sensitivity compared to a purely detection-based model, since by comparing the observation likelihoods under the signal and noise models we can extract statistical evidence from sub-threshold arrivals (or their absence) which would otherwise be ignored. This capability is especially valuable for faintly detected (low-magnitude and/or teleseismic) events. </p>
+
+	      <p>A further advance of SIG-VISA is the incorporation of nonparametric modeling using Gaussian processes (GPs). Known to the geophysics community as the mathematical foundation of kriging, GPs provide a probabilistic framework for predicting the attributes of future events based on past events in similar or nearby locations. SIG-VISA makes use of GP models for the template shape parameters, improving localization performance relative to simpler parametric models of the types used in previous systems (e.g. NET-VISA). Moreover, we are developing a nonparametric model for the template perturbations that captures the phenomenon of correlated waveforms from nearby events; this allows a waveform matching effect to fall out naturally from the probabilistic inference. </p>
+	    </div>
+	    <div class="bib" >
+	      <code>
+		<pre>
+@article{moore2012mrr,
+title     = {Progress in Signal-based Bayesian Monitoring},
+author    = {David A. Moore and Kevin Mayeda and Stephen C. Myers and Min Joon Seo and Stuart J. Russell},
+journal = {Proceedings of Monitoring Research Review (MRR)},
+year      = {2012},
+month     = {September},
+address   = {Albuquerque, NM},
+}</pre>
+	      </code>
+	    </div><br>
+
+
+	  </li>
+
+	  <li>
+	    <b>Bayesian Treaty Monitoring: Preliminary Report</b>
+	    <br />
+	    Stuart J. Russell, Stephen C. Myers, Nimar S. Arora, David A. Moore, and Erik Sudderth
+	    <br />
+	    <i>Monitoring Research Review</i>, Tucson, AZ, September 2011.
+	    <br />
+	    <a href="papers/visa-mrr-11.pdf">[paper]</a>&nbsp;&nbsp;
+	    <a href="papers/visa-mrr-11-poster.pdf">[poster]</a>&nbsp;&nbsp;
+	    <a href="#" onclick="showDiv(this.parentNode, 'abstract');return false;">[abstract]</a>&nbsp;&nbsp;
+	    <a href="#" onclick="showDiv(this.parentNode, 'bib');return false;">[bib]</a><br>
+
+	    <div class="abstract" >
+	      <p>Our project has initiated and will develop and evaluate a new Bayesian approach for nuclear test monitoring. We anticipate that the new approach will yield substantially lower detection thresholds, possibly approaching a theoretical lower bound that we hope to establish. We will also develop new techniques to implement such monitoring capabilities within a general-purpose Bayesian modeling and inference system that may eventually support a wide range of information-system needs for arms treaties.</p>
+
+	      <p>In ongoing work that is moving towards possible deployment, we have completed a prototype seismic monitoring system based on a generative, vertically integrated statistical model linking hypothesized events to “detections” extracted from raw signal data by classical algorithms. On test data sets of naturally occurring events curated by human experts, our system exhibits roughly 60% fewer detection failures than the currently deployed automated system, SEL3, that forms part of the International Monitoring System.</p>
+
+	      <p>The current phase of the project moves away from hard-threshold detections altogether. Instead, the generative model spans the full range from events to measured signal properties. Given the observed signal traces, the statistical inference algorithm attempts to maximize a whole-network statistical measure of the likelihood that an event – or collection of events – has occurred. Specialized techniques such as waveform matching and double differencing are realized within our framework as special cases of probabilistic inference; our initial experiments using 2D simulated data indicate that a full Bayesian analysis can provide more accurate absolute and relative locations than double differencing, while simultaneously estimating the velocity structure of the observed region.</p>
+
+	      <p>As we move toward a full-scale implementation, the primary tasks will involve the development of accurate predictive models of waveform properties. These models will combine both parametric forms (for example, triangular envelopes in multiple frequency bands) and nonparametric forms based on previously observed waveforms from nearby events. Hybrid models will smoothly interpolate between these two forms depending on the distance of the hypothesized event from previously observed events.</p>
+	    </div>
+
+	    <div class="bib" >
+	      <code>
+		<pre>
+@InProceedings{russell2011mrr,
+title     = {Bayesian Treaty Monitoring: Preliminary Report},
+author    = {Stuart J. Russell and Stephen C. Myers and Nimar S. Arora and David A. Moore and Erik Sudderth},
+booktitle = {Proceedings of Monitoring Research Review (MRR)},
+year      = {2011},
+month     = {September},
+address   = {Tucson, AZ},
+}</pre>
+	      </code>
+
+	    </div><br>
+	  </li>
+
+
+	  <li>
+	    <b>Deep Transfer as Structure Learning in Markov Logic Networks</b>
+	    <br />
+	    David Moore and Andrea Danyluk
+	    <br />
+	    <i>Proceedings of the AAAI-2010 Workshop on Statistical Relational AI (StarAI)</i>, Atlanta, GA, July 2010.
+	    <br />
+	    <a href="papers/2010_starai_paper.pdf">[paper]</a>&nbsp;&nbsp;
+	    <a href="papers/2010_starai_poster.pdf">[poster]</a>&nbsp;&nbsp;
+	    <a href="#" onclick="showDiv(this.parentNode, 'abstract');return false;">[abstract]</a>&nbsp;&nbsp;
+	    <a href="#" onclick="showDiv(this.parentNode, 'bib');return false;">[bib]</a><br>
+
+	    <div class="abstract" >
+	      <p>
+		Learning the relational structure of a domain is a fundamental
+		problem in statistical relational learning. The deep transfer
+		algorithm of Davis and Domingos attempts to improve structure
+		learning in Markov logic networks by harnessing the power of transfer
+		learning, using the second-order structural regularities of a source
+		domain to bias the structure search process in a target domain. We
+		propose that the clique-scoring process which discovers these
+		second-order regularities constitutes a novel standalone method for
+		learning the structure of Markov logic networks, and that this fact,
+		rather than the transfer of structural knowledge across domains,
+		accounts for much of the performance benefit observed via the deep
+		transfer process. This claim is supported by experiments in which we
+		find that clique scoring within a single domain often produces results
+		equaling or surpassing the performance of deep transfer incorporating
+		external knowledge, and also by explicit algorithmic similarities
+		between deep transfer and other structure learning techniques.
+	      </p>
+	    </div>
+
+	    <div class="bib" >
+	      <code>
+		<pre>
+@InProceedings{moore-starai-2010,
+title     = {Deep Transfer as Structure Learning in Markov Logic Networks},
+author    = {David A. Moore and Andrea Danyluk},
+booktitle = {Proceedings of the AAAI-2010 Workshop on Statistical Relational AI (StarAI)},
+year      = {2010},
+month     = {July},
+address   = {Atlanta, GA},
+}</pre>
+	      </code>
+
+	    </div><br>
+	  </li>
+	</ul>
+
+	<h4>Theses and other reports</h4>
+	<ul>
+	  <li>Moore, D. Signal-based Bayesian Seismic Monitoring (2016). PhD thesis, UC Berkeley. (<a href="papers/dmoore_thesis.pdf">pdf</a>)</li>
+
+	  <li>Moore, D. Transfer and Structure Learning in Markov Logic Networks (2010). Williams College senior thesis. (<a href="papers/williams_thesis.pdf">pdf</a>)</li>
+	  <li>Moore, D., Williams, A., and Hanson, A. Recognizing Kitchen Sounds for Monitoring Behavior (2009). Summer 2009 UMass REU project. (<a href="papers/kitchensounds.pdf">poster</a>)</li>
+	</ul>
+
+      </div>
+
+      <hr>
+      <div class="row content"><a name="software"><h3>Software</h3></a>
+	<p>Note: please contact me if you plan to use any of this code! Some of it may be poorly documented or broken in its current form, but I'm glad to help figure out how it can be useful to you. </p>
+	<p><a href="https://www.github.com/davmre/elbow/">Elbow</a> is a flexible framework for probabilistic programming, built atop TensorFlow. It's focused on modular construction of probabilistic models and variational posterior representations.</p>
+	<p><a href="https://www.github.com/davmre/matrizer/">Matrizer</a> is an optimizing compiler for linear algebra expressions: it tries to infer matrix properties and rewrite computations for efficient and numerically stable execution. <font color="red">New:</font> try the <a href="http://www.matrizer.org">interactive web interface</a>!</p>
+	  <p>The <a href="https://www.github.com/davmre/treegp/">TreeGP</a> package implements Gaussian process regression in Python, with efficient posterior calculations via cover trees as described in our UAI-MSTND paper above.</p>
+      </div>
+
+
+      <hr>
+      <div class="row content"><a name="teaching"><h3>Teaching</h3></a>
+	<p>I'm not currently teaching. Courses I've TA'd in the past:</p>
+	<ul>
+	  <li>Berkeley CS 188: Introduction to Artificial Intelligence (Fall 2012). </li>
+	  <li>Berkeley CS 70: Discrete Mathematics and Probability Theory (Spring 2012).</li>
+	  <li>Williams <a href="http://www.icsi.berkeley.edu/~barath/cs361/">CS 361</a>: Theory of Computation. Fall 2009. </li>
+	  <li>Williams <a href="http://www.cs.williams.edu/cs237.html">CS 237</a>: Computer Organization. Fall 2008.  </li>
+	  <li>Williams <a href="http://cs.williams.edu/~cs134/index.html">CS 134</a>: Intro to Computer Science. Fall 2007, Spring 2008.</li>
+	</ul>
+      </div>
+      <hr>
+
+      <div class="row content">
+	<a name="personal"><h3>Personal</h3></a>
+	<p>In my spare time, I play violin with the <a href="http://orchestra.berkeley.edu/">UC Berkeley Symphony Orchestra</a>. We play about one concert set per month during the academic year, with a wide range of great repertoire (see the website for details). Tickets are only $5 for Berkeley students, so come check us out!</p>
+
+	<p>If you're a Williams or Berkeley undergrad thinking about applying to CS grad schools, feel free to get in touch; I'm more than happy to talk about my experiences with the process! I can't guarantee to be helpful, but I can guarantee to be more helpful than either of <a href="http://www.arjunnarayan.com/">these</a> <a href="http://www-personal.umich.edu/~jakelev/">guys</a>.</p>  
+
+	<p>I've started a <a href="http://davmre.github.io">blog</a> to contain writings on CS and non-CS topics. I'm not sure yet how often it'll be updated.</p>
+
+	<!--
+	Useful technical things:
+	  <ul>
+	    <li><a href="http://arkitus.com/patterns-for-research-in-machine-learning/">Patterns for research in machine learning</a> (Ali Eslami)</li>
+	    <li><a href="http://www.cs.berkeley.edu/~klein/papers/lagrange-multipliers.pdf">Lagrange Multipliers without Permanent Scarring</a> (Dan Klein)</li>
+	    <li><a href="http://www.cs.nyu.edu/~roweis/notes/matrixid.pdf">Matrix identities</a> and <a href="http://www.cs.nyu.edu/~roweis/notes/gaussid.pdf">Gaussian identities</a>. (Sam Roweis)</li>
+	    <li><a href="http://research.microsoft.com/en-us/um/people/minka/papers/matrix/minka-matrix.pdf">Old and New Matrix Algebra Useful for Statistics</a>. (Tom Minka)</li>
+	    <li><a href="http://research.microsoft.com/en-us/um/people/minka/papers/nuances.html">Nuances of probability theory</a> (Tom Minka)</li>
+	    <li><a href="http://www.cs.berkeley.edu/~jduchi/projects/matrix_prop.pdf">Properties of the Trace and Matrix Derivatives</a> (John Duchi)</li>
+	    </ul>
+
+	  Nontechnical things:
+	  <ul>
+	    <li><a href="http://www.cs.rutgers.edu/~mlittman/topics/style">Stylistic comments on scientific writing (Michael Littman)</a></li>
+	    <li><a href="http://lmbgp.tumblr.com/post/37797842377/on-mentoring-undergraduate-researchers">On Mentoring Undergraduate Researchers</a> (Justine Sherry)</li>
+	    <li><a href="http://irl.cs.ucla.edu/papers/right-size.html">On Being the Right Size</a> (J.B.S. Haldane)</li>
+	    </ul>
+	  -->
+
+      </div>
+
+      <div class="footer">
+        <p>Last updated February 2017. Written with <a href="http://getbootstrap.com">Bootstrap</a>.</p>
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
